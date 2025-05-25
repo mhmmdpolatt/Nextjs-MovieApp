@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎬 MovieApp - TMDB Film & Dizi Platformu
 
-## Getting Started
+Kendi film/dizi keşif platformunu inşa etmeye ne dersin?  
+**MovieApp**, Next.js 13 ile geliştirilen, TMDB API ile çalışan, kullanıcıların film ve dizi bilgilerine erişip favorilerine ekleyebildiği tam özellikli bir uygulamadır.
 
-First, run the development server:
+![MovieApp Banner]![Ekran Görüntüsü (2)](https://github.com/user-attachments/assets/03246aab-8af4-4200-ada2-24b1578817f1)
+) 
+
+---
+
+## 🚀 Canlı Demo
+
+🔗 [MovieApp'i canlı olarak deneyimle]([https://your-deployment-link.vercel.app](https://nextjs-movie-app-mauve.vercel.app/))
+
+---
+
+## ⚙️ Özellikler
+
+- ✅ **JWT ile kullanıcı girişi ve kaydı**
+- 🧠 **Kullanıcı bazlı veriler (beğenilenler, izlenenler, sonra izle)**
+- 🎞️ **Film & Dizi listeleme** (kategori, puan, yıl filtreleri)
+- 📝 **Hover ile açılan detay kutuları** (Netflix tarzı)
+- 🌐 **Mobil uyumlu responsive tasarım**
+- 🌈 **Şık arayüz (Tailwind CSS + React Icons)**
+- 📦 **MongoDB Atlas üzerinde veri yönetimi**
+- ⚡ **Next.js 13 App Router kullanımı**
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+| Teknoloji        | Açıklama                    |
+|------------------|-----------------------------|
+| Next.js 13       | React tabanlı framework     |
+| MongoDB Atlas    | Bulut tabanlı NoSQL veritabanı |
+| Tailwind CSS     | Utility-first CSS framework |
+| TMDB API         | Film & dizi verileri        |
+| JWT              | Kimlik doğrulama sistemi    |
+| Vercel           | Hosting & deployment        |
+
+---
+
+## 🔧 Kurulum ve Çalıştırma
 
 ```bash
+# Repoyu klonla
+git clone https://github.com/mhmmdpolatt/Nextjs-MovieApp.git
+cd Nextjs-MovieApp
+
+# Bağımlılıkları yükle
+npm install
+
+# .env dosyasını oluştur ve içine aşağıdaki bilgileri gir
+NEXT_PUBLIC_TMDB_BEARER_TOKEN=your_tmdb_token
+NEXT_PUBLIC_MONGO_DB_URL=your_mongodb_connection_string
+NEXT_PUBLIC_JWT_KEY=your_jwt_secret
+
+# Projeyi başlat
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
