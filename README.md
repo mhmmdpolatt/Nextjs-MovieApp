@@ -11,6 +11,7 @@ Kendi film/dizi keşif platformunu inşa etmeye ne dersin?
 ## 🚀 Canlı Demo
 
 🔗 [MovieApp'i canlı olarak deneyimle]([https://your-deployment-link.vercel.app](https://nextjs-movie-app-mauve.vercel.app/))
+https://nextjs-movie-app-mauve.vercel.app/
 
 ---
 
