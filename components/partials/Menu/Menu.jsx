@@ -49,7 +49,7 @@ function Menu({ openMenu, handleCloseMenu, data }) {
 
                 {/* Navigation Links */}
                 <nav className="flex flex-col gap-3 p-5 text-white font-semibold border-b border-white/10">
-                    <KullaniciMenu data={data} />
+                    <KullaniciMenu data={data} handleCloseMenu={handleCloseMenu}  />
                     <Link href="/" onClick={handleCloseMenu} className="hover:text-cyan-400">🏠 Anasayfa</Link>
                     <Link href="/filmler" onClick={handleCloseMenu} className="hover:text-cyan-400">🎞️ Filmler</Link>
                     <Link href="/diziler" onClick={handleCloseMenu} className="hover:text-cyan-400">📺 Diziler</Link>

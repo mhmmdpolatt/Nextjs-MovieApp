@@ -5,7 +5,7 @@ import { FaUser } from 'react-icons/fa'
 import { useRouter } from 'next/navigation';
 import Link from 'next/link'
 
-export default function KullaniciMenu({ data }) {
+export default function KullaniciMenu({ data,handleCloseMenu }) {
     const [open, setOpen] = useState(false)
     const router = useRouter();
 
@@ -40,6 +40,7 @@ export default function KullaniciMenu({ data }) {
                     <Link
                         href="/giris"
                         className='text-[#ffffff] font-light mr-8 hover:text-[#DFD0B8] transition duration-300 ease-in-out'
+                        onClick={handleCloseMenu}
                     >
                         Giriş Yap
                     </Link>
@@ -53,6 +54,7 @@ export default function KullaniciMenu({ data }) {
                                 <Link
                                     href="/profile"
                                     className='block px-4 py-2 text-sm text-white hover:bg-cyan-600 rounded-t-lg'
+                                    onClick={handleCloseMenu}
                                 >
                                     Profil
                                 </Link>
